@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function find(num, arr) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (num === arr[i]) {
+                alert("Số " + num + " là một giá trị trong mảng");
+                count++;
+                break;
+            }
+        }
+        if (count === 0) {
+            alert("Số " + num + " không có trong mảng")
+        }
+    }
+
+    let arr = [1, 2, 3, 5, 6, 7, 8, 8, 9];
+    let num = +prompt("Nhập số cần tìm")
+    find(num, arr)
+</script>
+</body>
+</html>
